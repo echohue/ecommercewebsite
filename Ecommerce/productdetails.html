@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="navbar">
+           <div class="logo">
+            <img src="urban.png" width="125px">
+           </div>
+           <nav>
+              <ul id="items">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="account.html">ACCOUNT</a></li>
+              </ul>
+            </nav>
+            <a href="shoppingcart.html"><img src="RedStore_Img\images\cart.png" width="30px" height="30px"></a>
+            <img src="RedStore_Img\images\menu.png" class="menu" onclick="menutoggle()">
+
+        </div>
+        
+    
+</div>
+
+<!--single product details-->
+ <div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+          <img src="tshirt.jpg" width="400px" height="400px">
+
+        </div>
+        <div class="col-2">
+          <p>Home/Graphic-Tshirt</p>
+          <h4>$50.00</h4>
+          <select>
+            <option>Select size</option>
+            <option>L</option>
+            <option>M</option>
+            <option>S</option>
+          </select>
+          <input type="number" value="1" >
+          <a href="" class="btn">Add to Cart</a>
+        </div>
+    </div>
+ </div>
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View More</p>
+    </div>
+</div>
+<div class="small-container">
+
+    <div class="row">
+        <div class="col-4">
+            <img src="shirtmen.jpg" height="300px" width="300px">
+          <h4>Men's Shirt</h4>
+          
+          <p>$100.00</p>
+
+        </div>
+        <div class="col-4">
+            <img src="denims.jpg" height="300px" width="300px">
+          <h4>Denim</h4>
+          
+          <p>$150.00</p>
+
+        </div>
+        <div class="col-4">
+            <img src="scarves.jpg" height="300px" width="300px">
+          <h4>Scarves</h4>
+          
+          <p>$10.00</p>
+
+        </div>
+        <div class="col-4">
+            <img src="dress.jpg" height="300px" width="300px">
+            <h4>Dress</h4>
+            
+            <p>$70.00</p>
+
+        </div>
+    </div>
+
+   
+    
+    
+        
+
+</div>
+
+  
+  
+   
+  <div class="footer" id="bottom">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Download app for ios and Android</p>
+                <div class="app-logo">
+                    <img src="RedStore_Img\images\play-store.png">
+                    <img src="RedStore_Img\images\app-store.png">
+                    
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="urban.png" width="125px">
+                <p>Sustainibility is our motto</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li style="color: rgb(189,95,95);">Coupons</li>
+                    <li style="color: rgb(189,95,95);">Blog Posts</li>
+                    <li style="color: rgb(189,95,95);">Return Policy</li>
+                    <li style="color: rgb(189,95,95);">Join Affiliates</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Folow us on</h3>
+                <ul>
+                    <li style="color: rgb(189,95,95);">Facebook</li>
+                    <li style="color: rgb(189,95,95);">Twitter</li>
+                    <li style="color: rgb(189,95,95);">Instagram</li>
+                    <li style="color: rgb(189,95,95);">YouTube</li>
+                </ul>
+            </div>
+
+        </div>
+        <hr>
+        <p style="text-align: center; color:rgb(95, 95, 95)">This content is protected by &copy; UrbanFinds</p>
+    </div>    
+  </div>
+  <script>
+    let items= document.getElementById("items");
+    items.style.maxHeight = "0px";
+    function menutoggle(){
+        if(items.style.maxHeight =="0px"){
+            items.style.maxHeight = "200px";
+        }
+        else{
+            items.style.maxHeight = "0px";
+        }
+    }
+  </script>
+</body>
+</html>
